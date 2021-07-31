@@ -1,0 +1,5 @@
+Importante: cada vez que hagan un cambio en algun paquete del server o de la interfaz, deben compilar los archivos nuevamente, ya que como es rmi para que esos cambios se efectuen se debe actualizar la carpeta RMIClasses:
+Se debe correr cada servidor primero y luego el proyecto rmiCliente, al correr el servidor le pedira un numero, ingresen uno del 1 al 4
+No hagan merge con main porque aja todavia no esta listo...
+
+javac -d RMIClasses -cp "RMIClasses" Interface\src\entities\*.java Interface\src\rmiinterface\*.java Interface\src\entities\island\*.java Interface\src\rmiinterface\*.java Interface\src\entities\item\*.java Interface\src\rmiinterface\*.java Interface\src\entities\ship\*.java Server\src\server\serverinterface\*.java Server\src\server\*.java Server\src\dev\piratasenelcaribe\client\*.java Server\src\dev\piratasenelcaribe\client\gfx\*.java Server\src\dev\piratasenelcaribe\display\*.java Server\src\dev\piratasenelcaribe\mouseinput\*.java Server\src\dev\piratasenelcaribe\states\*.java Server\src\dev\piratasenelcaribe\tiles\*.java Server\src\dev\piratasenelcaribe\worlds\*.java  Server\src\dev\piratasenelcaribe\utils\*.java
