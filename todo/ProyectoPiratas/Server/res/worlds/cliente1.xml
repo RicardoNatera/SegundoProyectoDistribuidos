@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<Data>
+
+    <initialData worldID="1">
+
+        <ship>
+            <name>La Venganza Errante</name>
+            <kind>pirate</kind>
+            <Crew>100</Crew>
+            <servings>100</servings>
+            <supplies>100</supplies>
+            <start>Isla Nueva Esperanzas</start>
+            <map>
+                <origin>Isla Nueva Esperanzas</origin>
+                <end>Cayo del buen viento</end>
+                <distance>20</distance>
+            </map>
+        </ship>
+
+    </initialData>
+    
+    <island id="1">
+        <name>Isla Nueva Esperanzas</name>
+        <coord>
+            <x>0</x>
+            <y>0</y>
+        </coord>
+        <costs>
+            <crew>5</crew>
+            <supplies>5</supplies>
+        </costs>
+        <points>
+            <name>Puerto Real</name>
+            <name>Cala de los Mártires</name>
+            <name>Playa de las perlas</name>
+        </points>
+
+        <calamity>
+            <info>
+                <name>Parte de la tribulacion ha sido atacada por tiburones en Playa de las perlas</name>
+                <damage>5</damage>
+                <type>Hombres</type>
+                <prob>5</prob>
+            </info>
+            <info>
+                <name>Ha sucedido un desprendimiento de rocas en Cala de los Mártires</name>
+                <damage>5</damage>
+                <type>Hombres</type>
+                <prob>5</prob>
+            </info>
+            <info>
+                <name>Un mono ha robado parte de tus suministros</name>
+                <damage>10</damage>
+                <type>Suministros</type>
+                <prob>10</prob>
+            </info>
+            <info>
+                <name>Parte de la polvora se ha mojado al explorar la playa</name>
+                <damage>5</damage>
+                <type>Municiones</type>
+                <prob>10</prob>
+            </info>
+        </calamity>
+
+    </island>
+    <island id="2">
+        <name>Cayo del buen viento</name>
+        <coord>
+            <x>450</x>
+            <y>70</y>
+        </coord>
+        <costs>
+            <crew>10</crew>
+            <supplies>10</supplies>
+        </costs>
+
+        <calamity>
+            <info>
+                <name>Unos hombres se han quedado en el cayo por la ilusión de las sirenas</name>
+                <damage>20</damage>
+                <type>Hombres</type>
+                <prob>5</prob>
+            </info>
+        </calamity>
+        
+
+        <chest>
+            <treasure>
+                <map>
+                    <origin>Cayo del buen viento</origin>
+                    <end>Cayo de sotavento</end>
+                    <distance>30</distance>
+                </map>
+                <size>5</size>
+            </treasure>
+            <treasure>
+                <name>Barras de Oro</name>
+                <size>25</size>
+            </treasure>
+            <treasure>
+                <name>Barras de Oro</name>
+                <size>25</size>
+            </treasure>
+            <treasure>
+                <name>Barras de Plata</name>
+                <size>50</size>
+            </treasure>
+            <treasure>
+                <name>Bolsa de Perlas</name>
+                <size>10</size>
+            </treasure>
+        </chest>
+
+    </island>
+
+    <island id="3">
+        <name>Cayo de sotavento</name>
+        <coord>
+            <x>280</x>
+            <y>280</y>
+        </coord>
+        <costs>
+            <crew>15</crew>
+            <supplies>10</supplies>
+        </costs>
+
+        <calamity>
+            <info>
+                <name>Por alguna extraña razón tus hombres han regalado parte de los suministros a los aborígenes</name>
+                <damage>15</damage>
+                <type>Suministros</type>
+                <prob>20</prob>
+            </info>
+        </calamity>
+
+        <chest>
+            <treasure>
+                <map>
+                    <origin>Cayo de sotavento</origin>
+                    <end>Isla La Holandesa</end>
+                    <distance>70</distance>
+                </map>
+                <size>5</size>
+            </treasure>
+            <treasure>
+                <map>
+                    <origin>Cayo de sotavento</origin>
+                    <end>Isla Nueva Esperanzas</end>
+                    <distance>120</distance>
+                </map>
+                <size>5</size>
+            </treasure>
+            <treasure>
+                <name>Bolsas de Monedas de Oros</name>
+                <size>15</size>
+            </treasure>
+            <treasure>
+                <name>Barras de Oro</name>
+                <size>25</size>
+            </treasure>
+            <treasure>
+                <name>Cofres de Joya</name>
+                <size>15</size>
+            </treasure>
+            <treasure>
+                <name>Cofres de piedras preciosas</name>
+                <size>10</size>
+            </treasure>
+        </chest>
+
+    </island>
+
+</Data>
