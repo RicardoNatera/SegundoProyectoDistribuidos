@@ -1,0 +1,30 @@
+//Acciones antes de iniciar el programa
+
+En la carpeta se encuenta un archivo de java.policy, ese archivo se debe copiar en la carpeta de security la cual esta en la carpeta conf del jdk
+
+En mi caso y como referencia, la dirección en mi computadora es C:\Program Files\Java\jdk-16.0.1\conf\security
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+En el programa RMICliente
+En la linea 29,Aqui, cambiar 192.168.1.105 por la dirección ipv4 de la maquina que inicie el startregistry, es decir la primera maquina donde se ejecute el programa de server.
+De igual forma al iniciar el server en cada maquina, uno de los primeros mensajes por consola es si se conecto a un registro previo o si lo inicio el, asi que eso sirve para identificar 
+esa primera máquina que comience el registro.
+
+//La carpeta RMIClasses se debe referenciar como libreria externa a los 3 diferentes programas (server,interface y rmiCliente)
+
+//Información importante
+
+Los diferentes programas se compilaron con el jdk-16.0.1 asi que tratar de correrlos con versiones anteriores resultará en un error. La versión de netBeans usada fue la 12.4
+
+Los 3 programas están comprimidos como zip, en una carpeta se puede poner los proyectos de server e interface, junto con la carpeta de RMIClasses
+
+El rmiCliente si puede estar en otro directorio aparte.
+
+
+//Por último si se hace un cambio en interface o en server, se deben compilar de nuevo los archivos ussando el comando 
+
+javac -d RMIClasses -cp "RMIClasses" Interface\src\entities\*.java Interface\src\rmiinterface\*.java Interface\src\entities\island\*.java Interface\src\rmiinterface\*.java Interface\src\entities\item\*.java Interface\src\rmiinterface\*.java Interface\src\entities\ship\*.java Server\src\server\serverinterface\*.java Server\src\server\*.java Server\src\dev\piratasenelcaribe\client\*.java Server\src\dev\piratasenelcaribe\client\gfx\*.java Server\src\dev\piratasenelcaribe\display\*.java Server\src\dev\piratasenelcaribe\mouseinput\*.java Server\src\dev\piratasenelcaribe\states\*.java Server\src\dev\piratasenelcaribe\tiles\*.java Server\src\dev\piratasenelcaribe\worlds\*.java  Server\src\dev\piratasenelcaribe\utils\*.java
+
+en el CMD posicionado en la carpeta donde esten la interfaz, el servidor y la carpeta RMIClasses, por eso se necesita que estos 3 archivos esten en una misma carpeta.
+
